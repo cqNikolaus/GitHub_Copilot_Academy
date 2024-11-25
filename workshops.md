@@ -12,7 +12,7 @@ Falls nicht, melde dich zunächst [bei GitHub an](https://github.com/github-copi
 
 ![Copilot Abo einrichten](./images/copilot_01_signup.png?raw=true "Copilot Abo einrichten")
 
-Nun wählst du dein Abrechnungsintervall, das nach Ablauf der Testphase gelten soll, sofern dein Abo nicht zuvor gekündigt wird. Beachte, dass du bei Auswahl des "Yearly plan" dein Abo nach Ablauf der Testphase erst nach einem Jahr kündigen kannst.
+Nun wählst du dein Abrechnungsintervall, das nach Ablauf der Testphase gelten soll, sofern dein Abo nicht zuvor gekündigt wird. Beachte, dass du bei Auswahl des "Yearly plan" dein Abo erst nach einem Jahr kündigen kannst, solltest du die Kündigung innerhalb deiner 30 Tage verpassen.
 
 Nach Eingabe deiner Adresse und gewünschten Zahlungsmethode, beginnt deine 30 Tage Testphase von GitHub Copilot. 
 Dir werden keine Kosten berechnet, solange du dein Abo innerhalb der nächsten 30 Tage kündigst.
@@ -20,5 +20,12 @@ Dir werden keine Kosten berechnet, solange du dein Abo innerhalb der nächsten 3
 ## 2. Erstelle deinen Codespace
 
 Klicke auf diesen Button um deinen Codespace zu erstellen:  
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cqNikolaus/GitHub_Copilot_Workshop?quickstart=1)
+
+Klicke dann auf "Create new codespace". Anschließend wird dein Codespace bereitgestellt, das dauert in der Regel ein paar Minuten.
+
+![Codespace erstellen](./images/copilot_02_create_codespace.png?raw=true "Copilot Abo einrichten")
+
+
 
