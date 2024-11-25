@@ -10,7 +10,7 @@ Die folgenden Schritte müssen abgeschlossen sein, bevor du mit den Übungen sta
 
 ## 1. Stelle sicher, dass du ein aktives Abo für die Nutzung von Copilot hast.
 
-Falls nicht, melde dich zunächst [bei GitHub an](https://github.com/github-copilot/signup), klicke dann sobald du eingeloggt bist, oben rechts auf dein Profilbild/Symbol und wähle entweder [Your Copilot](https://github.com/github-copilot/signup) aus, oder [Settings -> Copilot](https://github.com/github-copilot/signup) und klicke anschließend auf "Start free trial". 
+Falls nicht, melde dich zunächst [bei GitHub an](https://github.com/github-copilot/signup), klicke dann sobald du eingeloggt bist, oben rechts auf dein Profilbild/Symbol und wähle entweder [Your Copilot](https://github.com/settings/copilot) aus, oder [Settings -> Copilot](https://github.com/settings/copilot) und klicke anschließend auf "Start free trial". 
 
 ![Copilot Abo einrichten](./images/copilot_01_signup.png?raw=true "Copilot Abo einrichten")
 
