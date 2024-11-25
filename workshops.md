@@ -1,4 +1,11 @@
+![Comquent Academy](./images/comquent-academy-logo.png?raw=true "Comquent Academy")
+
+
+
 # GitHub Copilot Workshop - Einrichten der Laborumgebung
+
+
+
 
 Diese Anleitung hilft dir dabei, eine GitHub-Codespaces-Umgebung einzurichten, die du für die praktischen Übungen dieses Kurses nutzen kannst.
 
@@ -25,7 +32,7 @@ Klicke auf diesen Button um deinen Codespace zu erstellen:
 
 Klicke dann auf "Create new codespace". Anschließend wird dein Codespace bereitgestellt, das dauert in der Regel ein paar Minuten.
 
-![Codespace erstellen](./images/copilot_02_create_codespace.png?raw=true "Copilot Abo einrichten")
+![Codespace erstellen](./images/copilot_02_create_codespace.png?raw=true "Codespace erstellen")
 
 
 
