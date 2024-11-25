@@ -16,3 +16,9 @@ Nun wählst du dein Abrechnungsintervall, das nach Ablauf der Testphase gelten s
 
 Nach Eingabe deiner Adresse und gewünschten Zahlungsmethode, beginnt deine 30 Tage Testphase von GitHub Copilot. 
 Dir werden keine Kosten berechnet, solange du dein Abo innerhalb der nächsten 30 Tage kündigst.
+
+## 2. Erstelle deinen Codespace
+
+Klicke auf diesen Button um deinen Codespace zu erstellen:  
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cqNikolaus/GitHub_Copilot_Workshop?quickstart=1)
+
