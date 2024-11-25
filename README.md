@@ -29,5 +29,16 @@ Klicke dann auf "Create new codespace". Anschließend wird dein Codespace bereit
 
 ![Codespace erstellen](./images/copilot_02_create_codespace.png?raw=true "Codespace erstellen")
 
+## 3. Öffne die Übungen
+
+Sobald dein Codespace bereit ist, öffne das Übungsdokument indem du im Explorer auf der linken Seite die Datei `uebungen.md` suchst. Klicke mit der rechten Maustaste darauf und wähle die Option "open preview". Alternativ kannst du die Datei auch direkt auf der GitHub-Seite in einem separaten Browser-Tab öffnen.
+
+![Übungen öffnen](./images/copilot_06_preview.png?raw=true "Uebungen öffnen")
+
+Das Dokument wird in einem Tab über deinem Editor geöffnet. So kannst du die Schritte in den Übungen ganz einfach verfolgen. 
+Übungsdokument: [GitHub Copilot Workshop Übungen](uebungen.md)
+
+
+
 
 
