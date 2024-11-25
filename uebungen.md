@@ -58,3 +58,57 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 
 ### Übung 2 - Code vereinfachen
+1. Erstelle eine neue Datei `primzahlen.py`, wie in Übung 1 per Interface oder Terminal:
+   
+   ```bash
+   code primzahlen.py
+   ```
+   
+2. Schreibe den Anfang einer Funktion:
+   
+   ```python
+   def is_prime(n):
+   ```
+   
+3. Platziere den Cursor am Ende der Zeile.
+   
+   ![Code Vereinfachung 01](./images/copilot_07_ue2.png?raw=true "Code Vereinfachung 01")
+   
+4. Drücke "Strg" + "Enter" um die verfügbaren Vorschläge anzuzeigen.
+   
+5. Wenn möglich, wähle eine der Optionen aus, die dir komplexer erscheint oder länger als die anderen ist. Klicke anschließend auf "Accept suggestion".
+   
+   ![Komplexere Funktion](./images/copilot_08_ue2.png?raw=true "Komplexere Funktion")
+
+6. Markiere jetzt deinen Code und öffne anschließend das Chat Fenster in der Seitenleiste rechts oder durch "Strg" + "Alt" + "L".
+
+7. Weise Copilot in deinen Worten an, den Code zu vereinfachen (früher mit `/simplify`). Je nachdem, wie viel Spielraum der Code für optimierungen lässt, kannst du dabei auch spezifischer werden. **Hinweis:** In den meisten Fällen erhältst du eine Antwort in der Sprache, in der du die Frage formuliert hast. Beispiele könnten sein:
+   
+   - ```Vereinfache```
+   
+   - ```Vereinfache den Code```
+   
+   - ```Schreibe den Code klarer und besser verständlich```
+   
+   - ```Verbessere die Lesbarkeit und Effizienz dieser Funktion, ohne die Funktionalität zu ändern. Bevorzuge pythonische Lösungen.```
+
+     
+  
+8. Fahre mit dem Mauszeiger über die Antwort und wähle "Im Editor anwenden" aus.
+  
+   ![Vereinfache Code](./images/copilot_09_ue2.png?raw=true "Vereinfache Code")
+
+9. Anschließend kannst du die Änderung im Editor mit "Show Changes" anzeigen lassen, akzeptieren oder verwerfen.
+
+   ![Änderungen anzeigen](./images/copilot_10_ue2.png?raw=true "Änderungen anzeigen")
+
+10. Wenn du möchtest, experimentiere ruhig ein wenig mit verschiedenen Anfragen und beliebigen Funktionen herum. Das kann auch in einer neuen Datei und in einer Programmiersprache deiner Wahl sein.
+
+    **Hinweis:** Copilot bietet verschiedenen GPT-Modelle zur Verarbeitung deiner Anfrage im Chat an, die sich teilweise auch deutlich in ihrer Qualität unterscheiden können.  
+    **Wie sieht eine Vereinfachung mit dem aktuell leistungsfähigsten Modell "o1-preview" im Vergleich zu "GPT 4o" aus?**  
+
+   ![Modell wählen](./images/copilot_11_ue2.png?raw=true "Änderungen anzeigen")
+  
+   
+  
+   
