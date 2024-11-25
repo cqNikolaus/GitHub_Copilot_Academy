@@ -10,7 +10,7 @@ Die folgenden Schritte müssen abgeschlossen sein, bevor du mit den Übungen sta
 
 ## 1. Stelle sicher, dass du ein aktives Abo für die Nutzung von Copilot hast.
 
-Falls nicht, melde dich zunächst [bei GitHub an](https://github.com/github-copilot/signup), klicke dann sobald du eingeloggt bist, oben rechts auf dein Profilbild/Symbol und wähle entweder [Your Copilot](https://github.com/github-copilot/signup) aus, oder [Settings -> Copilot](https://github.com/github-copilot/signup) und klicke anschließend auf "Start free trial". 
+Falls nicht, melde dich zunächst [bei GitHub an](https://github.com/github-copilot/signup), klicke dann sobald du eingeloggt bist, oben rechts auf dein Profilbild/Symbol und wähle entweder [Your Copilot](https://github.com/settings/copilot) aus, oder [Settings -> Copilot](https://github.com/settings/copilot) und klicke anschließend auf "Start free trial". 
 
 ![Copilot Abo einrichten](./images/copilot_01_signup.png?raw=true "Copilot Abo einrichten")
 
@@ -28,6 +28,17 @@ Klicke auf diesen Button um deinen Codespace zu erstellen:
 Klicke dann auf "Create new codespace". Anschließend wird dein Codespace bereitgestellt, das dauert in der Regel ein paar Minuten.
 
 ![Codespace erstellen](./images/copilot_02_create_codespace.png?raw=true "Codespace erstellen")
+
+## 3. Öffne die Übungen
+
+Sobald dein Codespace bereit ist, öffne das Übungsdokument indem du im Explorer auf der linken Seite die Datei `uebungen.md` suchst. Klicke mit der rechten Maustaste darauf und wähle die Option "open preview". Alternativ kannst du die Datei auch direkt auf der GitHub-Seite in einem separaten Browser-Tab öffnen.
+
+![Übungen öffnen](./images/copilot_06_preview.png?raw=true "Uebungen öffnen")
+
+Das Dokument wird in einem Tab über deinem Editor geöffnet. So kannst du die Schritte in den Übungen ganz einfach verfolgen. 
+Übungsdokument: [GitHub Copilot Workshop Übungen](uebungen.md)
+
+
 
 
 
