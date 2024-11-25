@@ -1,6 +1,6 @@
 ![Comquent Academy](./images/comquent-academy-logo.png?raw=true "Comquent Academy")
 
-# GitHub Copilot Workshop - Einrichten der Laborumgebung
+# GitHub Copilot Workshop - Einrichten der Übungsumgebung
 
 Diese Anleitung hilft dir dabei, eine GitHub-Codespaces-Umgebung einzurichten, die du für die praktischen Übungen dieses Kurses nutzen kannst.
 
