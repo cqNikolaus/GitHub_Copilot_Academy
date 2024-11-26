@@ -55,9 +55,14 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     ![Optionen durchschalten](./images/copilot_05_ue1.png?raw=true "Optionen durchschalten")
 
+<br>
 
+---
+
+<br>
 
 ### Übung 2 - Code vereinfachen
+
 1. Erstelle eine neue Datei `primzahlen.py`, wie in Übung 1 per Interface oder Terminal:
    
    ```bash
@@ -80,7 +85,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
    
    ![Komplexere Funktion](./images/copilot_08_ue2.png?raw=true "Komplexere Funktion")
 
-6. Markiere jetzt deinen Code und öffne anschließend das Chat Fenster in der Seitenleiste rechts oder durch "Strg" + "Alt" + "L".
+6. Markiere jetzt deinen Code und öffne anschließend das Chat Fenster in der Seitenleiste rechts oder durch "Strg" + "Alt" + "I".
 
 7. Weise Copilot in deinen Worten an, den Code zu vereinfachen (früher mit `/simplify`). Je nachdem, wie viel Spielraum der Code für optimierungen lässt, kannst du dabei auch spezifischer werden. **Hinweis:** In den meisten Fällen erhältst du eine Antwort in der Sprache, in der du die Frage formuliert hast. Beispiele könnten sein:
    
@@ -108,6 +113,28 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
     **Wie sieht eine Vereinfachung mit dem aktuell leistungsfähigsten Modell "o1-preview" im Vergleich zu "GPT 4o" aus?**  
 
    ![Modell wählen](./images/copilot_11_ue2.png?raw=true "Änderungen anzeigen")
+
+11. Jetzt wollen wir uns ansehen, wie Copilot einen Fehler im Code korrigieren kann. Baue einen Fehler ein, indem du eine Variable in deiner Funktion durch eine andere ersetzt, die nicht existiert, z.B. "x" statt "n".
+
+    ![Fehler einbauen](./images/copilot_12_ue2.png?raw=true "Fehler einbauen")
+
+12. Markiere deinen Code. Es erscheint ein gelbes Glühbirnen- oder Sternsymbol in der Nähe des Codes. Klicke darauf und du erhältst unter anderem die Optionen, den Code mit Copilot zu korrigieren oder dir den Fehler erklären zu lassen.
+    
+13. Klicke auf "Mit Copilot korrigieren"
+
+14. Nach ein paar Sekunden sollte Copilot eine Korrektur vorschlagen und vermutlich eine Erklärung dazu liefern. Mit einem Klick auf "Annehmen" kannst du sie akzeptieren. Der kleine Pfeil rechts lässt dich die Änderungen anzeigen und umschalten.
+
+    ![Mit Copilot korrigieren](./images/copilot_13_ue2.png?raw=true "Mit Copilot korrigieren")
+
+    **Hinweis:** Wie du an deiner Anfrage im Chatfenster nun sehen kannst, wird automatisch das Slash-Kommando "/fix" genutzt. Dieser Befehl weist Copilot ohne Eingabe eines ausführlicheren Prompts an, Fehler im Code zu finden und zu korrigieren. Du könntest also anstelle des zuvor beschriebenen Weges, auch einfach "/fix" als Befehl in den Copilot-Chat("Strg" + "Alt" + "I") oder den Inline-Chat ("Strg" + "I") schreiben. Ebenso sind alternativ natürlich auch Anweisungen in eigener Formulierung möglich.
+
+<br>
+
+---
+
+<br>
+
+### Übung 3 - Copilot nach dem Programmieren
   
    
   
