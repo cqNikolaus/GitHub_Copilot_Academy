@@ -16,11 +16,11 @@
   // function to parse data
   ```
 
-3. Wenn du jetzt Enter drückst, sollte Copilot direkt Code für die nächste Zeile vorschlagen. Durch Drücken von "Tab" kannst du diese Zeile akzeptieren, woraufhin direkt der nächste Vorschlag erscheint. Falls nicht, drücke zunächst erneut "Enter", um in die nächste Zeile zu springen. So kannst du weitermachen, bis die Funktion vollständig ist.
+3. Wenn du jetzt Enter drückst, sollte Copilot direkt Code für die nächste Zeile vorschlagen. Durch Drücken von `Tab` kannst du diese Zeile akzeptieren, woraufhin direkt der nächste Vorschlag erscheint. Falls nicht, drücke zunächst erneut `Enter`, um in die nächste Zeile zu springen. So kannst du weitermachen, bis die Funktion vollständig ist.
 
    ![Kommentare nutzen](./images/copilot_03_ue1.png?raw=true "Kommentare nutzen")
   
-5. In manchen Fällen kann es vorkommen, dass auch nach mehreren Sekunden kein Vorschlag angezeigt wird. Dann kann Copilot durch Eingeben des ersten zu erwartenden Buchstabens (in unserem Fall ein "f" für "function") ein kleiner "Schubser" gegeben werden, und der Vorschlag für den nächsten Teil des Codes sollte erscheinen.
+5. In manchen Fällen kann es vorkommen, dass auch nach mehreren Sekunden kein Vorschlag angezeigt wird. Dann kann Copilot durch Eingeben des ersten zu erwartenden Buchstabens (in unserem Fall ein `f` für "function") ein kleiner "Schubser" gegeben werden, und der Vorschlag für den nächsten Teil des Codes sollte erscheinen.
     
 Ein ähnliches Problem kann sich übrigens ergeben, wenn wir die Anfrage auf Deutsch formulieren:
 
@@ -28,30 +28,30 @@ Ein ähnliches Problem kann sich übrigens ergeben, wenn wir die Anfrage auf Deu
   // Funktion zum Parsen von Daten
   ```
 
-Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen sinnvollen Vorschlag macht, sondern möglicherweise sogar selbst einen weiteren Kommentar hinzufügen möchte. Auch hier hilft das "Anstupsen" durch Eingabe des ersten Buchstabens, den wir sehen wollen: "f".
+Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen sinnvollen Vorschlag macht, sondern möglicherweise sogar selbst einen weiteren Kommentar hinzufügen möchte. Auch hier hilft das "Anstupsen" durch Eingabe des ersten Buchstabens, den wir sehen wollen: `f`.
 
 5. Unser Prompt per Kommentar ist in jedem Fall noch nicht spezifisch genug, damit Copilot weiß, was wir tun möchten. Entferne den Code und versuche es mit:
   ```javascript
   // function to parse url
   ```
 
-6. Drücke "Enter" und du wirst vermutlich eine Zeile wie diese sehen:
+6. Drücke `Enter` und du wirst vermutlich eine Zeile wie diese sehen:
   ```javascript
   function parseURL(url) {
   ```
-7. Drücke "Tab", um den Vorschlag anzunehmen, und wieder "Enter". So kannst du dir Stück für Stück deine Funktion "zusammenbauen" lassen. Wie zuvor gilt: Sollte kein (brauchbarer) Vorschlag kommen, hilft das "Anstupsen" durch Eingabe eines Buchstabens (oft auch schon durch Tasten wie Leertaste, Backspace oder Enter).  
+7. Drücke `Tab`, um den Vorschlag anzunehmen, und wieder `Enter`. So kannst du dir Stück für Stück deine Funktion "zusammenbauen" lassen. Wie zuvor gilt: Sollte kein (brauchbarer) Vorschlag kommen, hilft das "Anstupsen" durch Eingabe eines Buchstabens (oft auch schon durch Tasten wie `Leertaste`, `Backspace` oder `Enter`).  
 
 8. Wirklich zufrieden wirst du mit dem Ergebnis wohl nicht sein. Copilot kann auch alternative Vorschläge anzeigen. Lösche dazu alles bis auf die erste Zeile der Funktion und platziere den Cursor am Ende der Zeile.
 
-9. Drücke "Strg" + "Enter". Es öffnet sich ein Fenster mit weiteren Vorschlägen. Unter Umständen kann das Generieren dieser Vorschläge ein paar Sekunden dauern. Diese werden in ihrer Vollständigkeit und Qualität mitunter stark variieren. Gefällt dir einer, klicke auf "Accept suggestion", um den Code zu übernehmen.
+9. Drücke `Strg + Enter`. Es öffnet sich ein Fenster mit weiteren Vorschlägen. Unter Umständen kann das Generieren dieser Vorschläge ein paar Sekunden dauern. Diese werden in ihrer Vollständigkeit und Qualität mitunter stark variieren. Gefällt dir einer, klicke auf "Accept suggestion", um den Code zu übernehmen.
 
     ![Alternative Vorschlaege](./images/copilot_04_ue1.png?raw=true "Alternative Vorschlaege")
 
-11. Lass uns jetzt noch einmal versuchen, eine noch spezifischere Anfrage zu stellen. Lösche deinen gesamten Code, und gib anstelle eines Kommentars einen Funktionsnamen ein. Drücke noch nicht "Enter" oder "Tab":
+11. Lass uns jetzt noch einmal versuchen, eine noch spezifischere Anfrage zu stellen. Lösche deinen gesamten Code, und gib anstelle eines Kommentars einen Funktionsnamen ein. Drücke noch nicht `Enter` oder `Tab`:
   ```javascript
   function splitURLandReturnComponents
   ```
-11. Mit diesem Namen sollte Copilot eine vollständige Funktion vorschlagen - tatsächlich sogar mehrere. Bewege die Maus über den Code und ein kleines Fenster sollte erscheinen. Hier siehst du, wie viele Optionen zur Auswahl stehen. Klicke auf ">" bzw. "<", um die Optionen durchzuschalten, und auf "Akzeptieren" ("Tab"), um den jeweiligen Vorschlag in deinen Code zu übernehmen.
+11. Mit diesem Namen sollte Copilot eine vollständige Funktion vorschlagen - tatsächlich sogar mehrere. Bewege die Maus über den Code und ein kleines Fenster sollte erscheinen. Hier siehst du, wie viele Optionen zur Auswahl stehen. Klicke auf ">" bzw. "<", um die Optionen durchzuschalten, und auf "Akzeptieren" (`Tab`), um den jeweiligen Vorschlag in deinen Code zu übernehmen.
 
     ![Optionen durchschalten](./images/copilot_05_ue1.png?raw=true "Optionen durchschalten")
 
@@ -79,15 +79,15 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
    
    ![Code Vereinfachung 01](./images/copilot_07_ue2.png?raw=true "Code Vereinfachung 01")
    
-4. Drücke "Strg" + "Enter" um die verfügbaren Vorschläge anzuzeigen.
+4. Drücke `Strg + Enter`, um die verfügbaren Vorschläge anzuzeigen.
    
 5. Wenn möglich, wähle eine der Optionen aus, die dir komplexer erscheint oder länger als die anderen ist. Klicke anschließend auf "Accept suggestion".
    
    ![Komplexere Funktion](./images/copilot_08_ue2.png?raw=true "Komplexere Funktion")
 
-6. Markiere jetzt deinen Code und öffne anschließend das Chat Fenster in der Seitenleiste rechts oder durch "Strg" + "Alt" + "I".
+6. Markiere jetzt deinen Code und öffne anschließend das Chat Fenster in der Seitenleiste rechts oder durch `Strg + Alt + I`.
 
-7. Weise Copilot in deinen Worten an, den Code zu vereinfachen (früher mit `/simplify`). Je nachdem, wie viel Spielraum der Code für optimierungen lässt, kannst du dabei auch spezifischer werden. **Hinweis:** In den meisten Fällen erhältst du eine Antwort in der Sprache, in der du die Frage formuliert hast. Beispiele könnten sein:
+7. Weise Copilot in deinen Worten an, den Code zu vereinfachen (früher mit `/simplify`). Je nachdem, wie viel Spielraum der Code für Optimierungen lässt, kannst du dabei auch spezifischer werden. **Hinweis:** In den meisten Fällen erhältst du eine Antwort in der Sprache, in der du die Anfrage formuliert hast. Beispiele könnten sein:
    
    - ```Vereinfache```
    
@@ -107,10 +107,10 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
    ![Änderungen anzeigen](./images/copilot_10_ue2.png?raw=true "Änderungen anzeigen")
 
-10. Wenn du möchtest, experimentiere ruhig ein wenig mit verschiedenen Anfragen und beliebigen Funktionen herum. Das kann auch in einer neuen Datei und in einer Programmiersprache deiner Wahl sein.
+    Experimentiere ruhig mit Anfragen in Programmiersprachen und Funktionen, die du gut kennst. So bekommst du ein besseres Gefühl dafür, wie Copilot Code vereinfachen kann.
 
-    **Hinweis:** Copilot bietet verschiedenen GPT-Modelle zur Verarbeitung deiner Anfrage im Chat an, die sich teilweise auch deutlich in ihrer Qualität unterscheiden können.  
-    **Wie sieht eine Vereinfachung mit dem aktuell leistungsfähigsten Modell "o1-preview" im Vergleich zu "GPT 4o" aus?**  
+10. (Optional) Copilot kann verschiedene KI-Modelle zur Verarbeitung deiner Anfragen nutzen, die sich in ihrer Qualität unterscheiden können. Wie sieht eine Vereinfachung mit dem aktuell leistungsfähigsten Modell "o1-preview" im Vergleich zu "GPT 4o" aus?  
+    Beachte: "o1-preview" braucht teils deutlich länger um eine Antwort zu generieren. 
 
    ![Modell wählen](./images/copilot_11_ue2.png?raw=true "Änderungen anzeigen")
 
@@ -118,7 +118,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     ![Fehler einbauen](./images/copilot_12_ue2.png?raw=true "Fehler einbauen")
 
-12. Markiere deinen Code. Es erscheint ein gelbes Glühbirnen- oder Sternsymbol in der Nähe des Codes. Klicke darauf und du erhältst unter anderem die Optionen, den Code mit Copilot zu korrigieren oder dir den Fehler erklären zu lassen.
+12. Markiere deinen Code. Es erscheint ein gelbes Glühbirnen- oder Sternsymbol in der Nähe des Codes. Klicke darauf, und du erhältst unter anderem die Optionen, den Code mit Copilot zu korrigieren oder dir den Fehler erklären zu lassen.
     
 13. Klicke auf "Mit Copilot korrigieren"
 
@@ -126,7 +126,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     ![Mit Copilot korrigieren](./images/copilot_13_ue2.png?raw=true "Mit Copilot korrigieren")
 
-    **Hinweis:** Wie du an deiner Anfrage im Chatfenster nun sehen kannst, wird automatisch das Slash-Kommando "/fix" genutzt. Dieser Befehl weist Copilot ohne Eingabe eines ausführlicheren Prompts an, Fehler im Code zu finden und zu korrigieren. Du könntest also anstelle des zuvor beschriebenen Weges, auch einfach "/fix" als Befehl in den Copilot-Chat("Strg" + "Alt" + "I") oder den Inline-Chat ("Strg" + "I") schreiben. Ebenso sind alternativ natürlich auch Anweisungen in eigener Formulierung möglich.
+    **„Hinweis:** Wie du an deiner Anfrage im Chatfenster sehen kannst, wird automatisch das Slash-Kommando `/fix` genutzt. Dieser Befehl weist Copilot an, Fehler im Code zu finden und zu korrigieren, ohne dass ein ausführlicher Prompt erforderlich ist. Du kannst daher auch direkt `/fix` in den Copilot-Chat (`Strg + Alt + I`) oder Inline-Chat (`Strg + I`) schreiben. Alternativ sind selbstverständlich auch Anweisungen in freier Formulierung möglich. Bei umfangreichen oder komplexeren Fehlern kann es sogar sinnvoller sein, eine detaillierte Anfrage mit zusätzlichem Kontext im Chat zu stellen.“
 
 <br>
 
