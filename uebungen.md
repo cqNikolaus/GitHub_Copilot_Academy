@@ -20,7 +20,7 @@
 
    ![Kommentare nutzen](./images/copilot_03_ue1.png?raw=true "Kommentare nutzen")
   
-5. In manchen Fällen kann es vorkommen, dass auch nach mehreren Sekunden kein Vorschlag angezeigt wird. Dann kann Copilot durch Eingeben des ersten zu erwartenden Buchstabens (in unserem Fall ein `f` für "function") ein kleiner "Schubser" gegeben werden, und der Vorschlag für den nächsten Teil des Codes sollte erscheinen.
+4. In manchen Fällen kann es vorkommen, dass auch nach mehreren Sekunden kein Vorschlag angezeigt wird. Dann kann Copilot durch Eingeben des ersten zu erwartenden Buchstabens (in unserem Fall ein `f` für "function") ein kleiner "Schubser" gegeben werden, und der Vorschlag für den nächsten Teil des Codes sollte erscheinen.
     
 Ein ähnliches Problem kann sich übrigens ergeben, wenn wir die Anfrage auf Deutsch formulieren:
 
@@ -47,7 +47,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     ![Alternative Vorschlaege](./images/copilot_04_ue1.png?raw=true "Alternative Vorschlaege")
 
-11. Lass uns jetzt noch einmal versuchen, eine noch spezifischere Anfrage zu stellen. Lösche deinen gesamten Code, und gib anstelle eines Kommentars einen Funktionsnamen ein. Drücke noch nicht `Enter` oder `Tab`:
+10. Lass uns jetzt noch einmal versuchen, eine noch spezifischere Anfrage zu stellen. Lösche deinen gesamten Code, und gib anstelle eines Kommentars einen Funktionsnamen ein. Drücke noch nicht `Enter` oder `Tab`:
   ```javascript
   function splitURLandReturnComponents
   ```
@@ -62,6 +62,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 <br>
 
 ### Übung 2 - Code vereinfachen
+#### In dieser Übung sehen wir uns an, wie Copilot uns dabei helfen kann, bestehenden Code zu vereinfachen und übersichtlicher zu machen.
 
 1. Erstelle eine neue Datei `primzahlen.py`, wie in Übung 1 per Interface oder Terminal:
    
@@ -134,8 +135,43 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 <br>
 
-### Übung 3 - Copilot nach dem Programmieren
-  
+### Übung 3 - Code verstehen und kommentieren mit Copilot
+#### In dieser Übung nutzen wir Copilot, um bestehenden Code zu analysieren, zu erklären und automatisch sinnvolle Kommentare zu generieren.
+
+1. Jetzt, wo wir etwas Code haben, mit dem wir arbeiten können, schauen wir uns an, was Copilot sonst noch für uns tun kann. Lass dir den aktuellen Code in unserer `primzahlen.py`-Datei erklären. Markiere den Code und öffne den Copilot-Inline-Chat mit der Tastenkombination `Cmd + I`.
+
+2. Auch hier können wir, anstatt eine längere Anfrage zu stellen, eines der eingebauten Slash-Kommandos nutzen:  
+   Gib `/explain`ein und drücke `Enter`.
+
+   ![Code erklären lassen](./images/copilot_14_ue3.png?raw=true "Code erklären lassen")
+
+3. Wenn dir die Antwort unklar oder unvollständig ist, kannst du weitere Fragen stellen, z.B.:
+
+   ```plaintext
+   Kannst du den Algorithmus genauer erklären?
+   ```
+4. (Optional) Wir können uns den Code auch über Kommentare erklären lassen. Das ist eine ältere Methode, der Chat bietet mittlerweile mehr möglichkeiten.
+   Gib den folgenden Kommentar unterhalb deiner Funktion ein: 
+
+   ```python
+   # Erkläre den Code oben Zeile für Zeile
+   ```
+   Copilot sollte die Antwort nun in den Kommentaren anzeigen. Drücke `Tab` um die Zeile zu akzeptieren und `Enter` um in die nächste Zeile zu springen und auf den nächsten Schritt der Erklärung zu warten.
+
+   ![Code erklären lassen per Kommentar](./images/copilot_15_ue3.png?raw=true "Code erklären lassen per Kommentar")
+
+   Mit dem Präfix `q:` lässt sich auch direkt eine Frage als Kommentar stellen. Die Antwort können wir, falls sie nicht automatisch erscheint, durch einen weiteren Kommentar, der mit `a:` beginnt, erzeugen lassen.
+
+   ![Erklärung per Kommentar Präfix](./images/copilot_16_ue3.png?raw=true "Erklärung per Kommentar Präfix" )
+
+5. Nun wollen wir das doc-Feature ausprobieren, um automatisch Dokumentationskommentare zu erstellen. Markiere deine Funktion.
+   
+6. Drücke jetzt `Strg + I`für den Inline-Chat, gib das Slash-Kommando `/doc` ein und drücke `Enter`. Copilot sollte nun automatisch einen Docstring für deinen Code generieren. Klicke auf "Akzeptieren" um den Vorschlag anzunehmen.
+
+   
+
+   
+   
    
   
    
