@@ -66,15 +66,15 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 1. Erstelle eine neue Datei `primzahlen.py`, wie in Übung 1 per Interface oder Terminal:
    
-   ```bash
-   code primzahlen.py
-   ```
+```bash
+code primzahlen.py
+```
    
 2. Schreibe den Anfang einer Funktion:
    
-   ```python
-   def is_prime(n):
-   ```
+```python
+def is_prime(n):
+```
    
 3. Platziere den Cursor am Ende der Zeile.
    
@@ -127,7 +127,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     ![Mit Copilot korrigieren](./images/copilot_13_ue2.png?raw=true "Mit Copilot korrigieren")
 
-    **„Hinweis:** Wie du an deiner Anfrage im Chatfenster sehen kannst, wird automatisch das Slash-Kommando `/fix` genutzt. Dieser Befehl weist Copilot an, Fehler im Code zu finden und zu korrigieren, ohne dass ein ausführlicher Prompt erforderlich ist. Du kannst daher auch direkt `/fix` in den Copilot-Chat (`Strg + Alt + I`) oder Inline-Chat (`Strg + I`) schreiben. Alternativ sind selbstverständlich auch Anweisungen in freier Formulierung möglich. Bei umfangreichen oder komplexeren Fehlern kann es sinnvoller sein, eine detaillierte Anfrage mit zusätzlichem Kontext im Chat zu stellen.“
+**„Hinweis:** Wie du an deiner Anfrage im Chatfenster sehen kannst, wird automatisch das Slash-Kommando `/fix` genutzt. Dieser Befehl weist Copilot an, Fehler im Code zu finden und zu korrigieren, ohne dass ein ausführlicher Prompt erforderlich ist. Du kannst daher auch direkt `/fix` in den Copilot-Chat (`Strg + Alt + I`) oder Inline-Chat (`Strg + I`) schreiben. Alternativ sind selbstverständlich auch Anweisungen in freier Formulierung möglich. Bei umfangreichen oder komplexeren Fehlern kann es sinnvoller sein, eine detaillierte Anfrage mit zusätzlichem Kontext im Chat zu stellen.“
 
 <br>
 
@@ -147,18 +147,19 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 3. Wenn dir die Antwort unklar oder unvollständig ist, kannst du weitere Fragen stellen, z.B.:
 
-   ```plaintext
-   Kannst du den Algorithmus genauer erklären?
-   ```
+```plaintext
+Kannst du den Algorithmus genauer erklären?
+```
 
-   **Hinweis:** Möchtest du die Erklärung in deiner Sprache haben, kannst du Copilot mit Formulierungen wie "/explain Antworte auf Deutsch" dazu anweisen. 
+**Hinweis:** Möchtest du die Erklärung in deiner Sprache haben, kannst du Copilot mit Formulierungen wie "/explain Antworte auf Deutsch" dazu anweisen. 
    
 4. (Optional) Wir können uns den Code auch über Kommentare erklären lassen. Das ist eine ältere Methode; der Chat bietet mittlerweile mehr Möglichkeiten.
    Gib den folgenden Kommentar unterhalb deiner Funktion ein: 
 
-   ```python
-   # Erkläre den Code oben Zeile für Zeile
-   ```
+```python
+# Erkläre den Code oben Zeile für Zeile
+```
+
    Copilot sollte die Antwort nun in den Kommentaren anzeigen. Drücke `Tab`, um die Zeile zu akzeptieren und `Enter` um in die nächste Zeile zu springen und auf den nächsten Schritt der Erklärung zu warten.
 
    ![Code erklären lassen per Kommentar](./images/copilot_15_ue3.png?raw=true "Code erklären lassen per Kommentar")
@@ -183,16 +184,46 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 ### Übung 4 - Tests mit Copilot generieren
 #### In dieser Übung werden wir mit Copilot automatische Tests für unsere Funktionen generieren. 
 
-1. Wir wollen nun Unit-Tests für unsere Primzahlen-Funktion erstellen lassen. Schreibe dazu folgenden Kommentar unterhalb deiner Funktion:
+1. Wir wollen uns nun Unit-Tests für unsere Primzahlen-Funktion erstellen lassen. Schreibe dazu folgenden Kommentar unterhalb deiner Funktion:
 
-   ```python
-   # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
-   ```
+  ```python
+  # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
+  ```
 
-   
+2. Drücke `Enter`und warte ggf. einen Moment bis Copilot eine Antwort generiert hat und drücke dann `Tab` um den Code anzunehmen. Falls du keinen Vorschlag erhältst, gib Copilot schon einmal den Funktionsnamen vor:
 
+  ```python
+  def test_is_prime():
+  ```
    
-   
+  ![Tests generieren](./images/copilot_18_ue4.png?raw=true "Tests generieren")
+  
+
+3. Was, wenn wir gar nicht wissen, wie man den Code überhaupt testet? Fragen wir Copilot. Markiere den Code deiner Funktion.
+
+  ![Prime-Funktion markieren](./images/copilot_19_ue4.png?raw=true "Prime-Funktion markieren")
+
+5. Öffne den Copilot-Chat (`Strg + Alt + I`) und stelle Copilot eine Frage, wie die Folgende:
+
+  ```
+  Erkläre mir, wie ich diesen Code testen kann?
+  ```
+
+**Hinweis:** Sollte Copilot dich auffordern dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
+
+
+
+6. Wie du in der Antwort siehst, hat Copilot vermutlich automatisch das Kommando `/test` genutzt und eine Erklärung hinzugefügt. Klicke auf den Haken um den Vorschlag zu übernehmen und Copilot, wie in der Erklärung beschrieben, automatisch eine neue Datei erstellen zu lassen. Diese muss dann noch unter dem beschriebenen Namen ("test_primzahlen.py") gespeichert werden.  
+
+![Test erklären](./images/copilot_20_ue4.png?raw=true "Test erklären")
+
+<br>
+
+---
+
+<br>
+
+### Übung 5
    
   
    
