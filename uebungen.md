@@ -183,6 +183,12 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 ### Übung 4 - Tests mit Copilot generieren
 #### In dieser Übung werden wir mit Copilot automatische Tests für unsere Funktionen generieren. 
 
+1. Wir wollen nun Unit-Tests für unsere Primzahlen-Funktion erstellen lassen. Schreibe dazu folgenden Kommentar unterhalb deiner Funktion:
+
+   ```python
+   # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
+   ```
+
    
 
    
