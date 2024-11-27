@@ -231,19 +231,19 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
    
 Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell dir vor, wir möchten mit einer Datenbank arbeiten, die Datensätze für Studierende, Mitarbeitende, Lehrpläne, Kurse, Fakultäten, Standorte und Einschreibungen eines Universitätssystems enthält. Schauen wir doch mal, was Copilot für eine Abfrage generieren würde, um alle Studierenden in einem Kurs zu erhalten – und das ohne jeglichen zusätzlichen Kontext.
 
-2. Gib den folgenden Kommentar ein und drücke `Tab`, um die Vorschläge zu akzeptieren. Falls du keinen Vorschlag erhältst oder nur ein Kommentar erscheint, kannst du Copilot durch das Eintippen von `select` einen kleinen „Schubs“ geben.
+2. Gib den folgenden Kommentar im Chat oder Inline-Chat ein und akzeptiere den erhaltenen Vorschlag:
 
-   ```sql
-   -- Definiere eine SELECT-Abfrage, um alle Studierenden in einem Kurs zu erhalten
+   ```plaintext
+   Definiere eine SELECT-Abfrage, um alle Studierenden in einem Kurs zu erhalten
    ```
 
-3. Speichere deine Datei (`Strg + S`), damit sie als Teil des Projekts betrachtet wird.
+3. Jetzt wollen wir uns ansehen, ob wir andere Ergebnisse bekommen, wenn wir Copilot zusätzlichen Kontext bereitstellen. In unserem GitHub-Repository befindet sich eine Datei `create-tables.sql` die eine Reihe von Tabellen enthält. Wenn du möchtest, kannst du sie dir ansehen oder in einem neuen Tab öffnen, für unser Beispiel spielt das aber keine Rolle.
 
-4. Jetzt wollen wir uns ansehen, ob wir andere Ergebnisse bekommen, wenn wir Copilot zusätzlichen Kontext bereitstellen.
-   Öffne die Datei `create-tables.sql` die sich im GitHub-Repository befindet, in deinem Editor. Du kannst dazu folgenden Befehl im Terminal verwenden:
+4. Um nun explizit die Datei `create-tables.sql` dem Kontext hinzuzufügen, stelle sicher, dass du du deine `dev.sql`im aktiven Tab geöffnet hast. Öffne dann das Chatfenster und ziehe die Datei `create-tables.sql` aus dem Explorer auf der linken Seite per Drag and Drop in das Chatfenster. Im Eingabefenster deines Copilot-Chats solltest du nun beide Dateinamen sehen. Gib deine Anfrage aus Schritt 2 erneut ein und du wirst feststellen, dass Copilot nun die Abfrage mit Bezug auf die Tabellen aus `create-tables.sql` erstellt.
 
-   ```bash
-   code create-tables.sql
-   ```
-  
+   **Hinweis:** Anstatt die Datei per Drag and Drop hinzuzufügen, kannst du auch im Chat die Variable `#file` nutzen um `create-tables.sql` auszuwählen.
+
+![SQL Abfrage mit Copilot](./images/copilot_21_ue5.png?raw=true "SQL Abfrage mit Copilot")
+
    
+
