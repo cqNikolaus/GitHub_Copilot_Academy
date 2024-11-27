@@ -206,7 +206,7 @@ Kannst du den Algorithmus genauer erklären?
 5. Öffne den Copilot-Chat (`Strg + Alt + I`) und stelle Copilot eine Frage, wie die Folgende:
 
   ```
-  Erkläre mir, wie ich diesen Code testen kann?
+  Erkläre mir, wie ich diesen Code testen kann
   ```
 
 **Hinweis:** Sollte Copilot dich auffordern dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
