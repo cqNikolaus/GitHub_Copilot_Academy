@@ -173,6 +173,16 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
    Zusätzlich kannst du Copilot auch hier in eigener Formulierung, z.B. die gewünschte Sprache oder die Ausführlichkeit der zu generierenden Kommentare, vorgeben.
    
    ![Doc-feature](./images/copilot_17_ue3.png?raw=true "Doc-feature")
+
+<br>
+
+---
+
+<br>
+
+### Übung 4 - Tests mit Copilot generieren
+#### In dieser Übung werden wir mit Copilot automatische Tests für unsere Funktionen generieren. 
+
    
 
    
