@@ -190,7 +190,7 @@ Kannst du den Algorithmus genauer erklären?
   # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
   ```
 
-2. Drücke `Enter`und warte ggf. einen Moment bis Copilot eine Antwort generiert hat und drücke dann `Tab` um den Code anzunehmen. Falls du keinen Vorschlag erhältst, gib Copilot schon einmal den Funktionsnamen vor:
+2. Drücke `Enter` und warte ggf. einen Moment, bis Copilot eine Antwort generiert hat, und drücke dann `Tab`, um den Code anzunehmen. Falls du keinen Vorschlag erhältst, gib Copilot schon einmal den Funktionsnamen vor:
 
   ```python
   def test_is_prime():
@@ -203,17 +203,17 @@ Kannst du den Algorithmus genauer erklären?
 
   ![Prime-Funktion markieren](./images/copilot_19_ue4.png?raw=true "Prime-Funktion markieren")
 
-5. Öffne den Copilot-Chat (`Strg + Alt + I`) und stelle Copilot eine Frage, wie die Folgende:
+4. Öffne den Copilot-Chat (`Strg + Alt + I`) und stelle Copilot eine Frage wie die folgende:
 
   ```
   Erkläre mir, wie ich diesen Code testen kann
   ```
 
-**Hinweis:** Sollte Copilot dich auffordern dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
+**Hinweis:** Sollte Copilot dich auffordern, dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
 
 
 
-6. Wie du in der Antwort siehst, hat Copilot vermutlich automatisch das Kommando `/test` genutzt und eine Erklärung hinzugefügt. Klicke auf den Haken um den Vorschlag zu übernehmen und Copilot, wie in der Erklärung beschrieben, automatisch eine neue Datei erstellen zu lassen. Diese muss dann noch unter dem beschriebenen Namen ("test_primzahlen.py") gespeichert werden.  
+5. Wie du in der Antwort siehst, hat Copilot vermutlich automatisch das Kommando `/test` genutzt und eine Erklärung hinzugefügt. Klicke auf den Haken, um den Vorschlag zu übernehmen, und lasse Copilot, wie in der Erklärung beschrieben, automatisch eine neue Datei erstellen. Diese muss dann noch unter dem beschriebenen Namen ("test_primzahlen.py") gespeichert werden.  
 
 ![Test erklären](./images/copilot_20_ue4.png?raw=true "Test erklären")
 
