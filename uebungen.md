@@ -4,17 +4,17 @@
 #### In dieser Übung lernen wir, wie Copilot anhand der von uns bereitgestellten Informationen Code generiert.
 1. Erstelle eine neue Datei. Wir nutzen für dieses Beispiel eine JavaScript-Datei. Erstelle sie über das Interface oder gib Folgendes in deinem Terminal ein:
 
-  ```bash 
-  code index.js
-  ```
+   ```bash 
+   code index.js
+   ```
 
    Anschließend sollte die Datei in deinem Editor geöffnet sein.
 
 2. Sehen wir uns nun an, wie Copilot auf eine sehr generische Anfrage reagiert. Wir kommunizieren dabei über Kommentare. Gib in deiner `index.js` folgenden Kommentar ein:
 
-  ```javascript
-  // function to parse data
-  ```
+   ```javascript
+   // function to parse data
+   ```
 
 3. Wenn du jetzt Enter drückst, sollte Copilot direkt Code für die nächste Zeile vorschlagen. Durch Drücken von `Tab` kannst du diese Zeile akzeptieren, woraufhin direkt der nächste Vorschlag erscheint. Falls nicht, drücke zunächst erneut `Enter`, um in die nächste Zeile zu springen. So kannst du weitermachen, bis die Funktion vollständig ist.
 
@@ -24,21 +24,21 @@
     
 Ein ähnliches Problem kann sich übrigens ergeben, wenn wir die Anfrage auf Deutsch formulieren:
 
-  ```javascript 
-  // Funktion zum Parsen von Daten
-  ```
+   ```javascript 
+   // Funktion zum Parsen von Daten
+   ```
 
 Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen sinnvollen Vorschlag macht, sondern möglicherweise sogar selbst einen weiteren Kommentar hinzufügen möchte. Auch hier hilft das "Anstupsen" durch Eingabe des ersten Buchstabens, den wir sehen wollen: `f`.
 
 5. Unser Prompt per Kommentar ist in jedem Fall noch nicht spezifisch genug, damit Copilot weiß, was wir tun möchten. Entferne den Code und versuche es mit:
-  ```javascript
-  // function to parse url
-  ```
+   ```javascript
+   // function to parse url
+   ```
 
 6. Drücke `Enter` und du wirst vermutlich eine Zeile wie diese sehen:
-  ```javascript
-  function parseURL(url) {
-  ```
+   ```javascript
+   function parseURL(url) {
+   ```
 7. Drücke `Tab`, um den Vorschlag anzunehmen, und wieder `Enter`. So kannst du dir Stück für Stück deine Funktion "zusammenbauen" lassen. Wie zuvor gilt: Sollte kein (brauchbarer) Vorschlag kommen, hilft das "Anstupsen" durch Eingabe eines Buchstabens (oft auch schon durch Tasten wie `Leertaste`, `Backspace` oder `Enter`).  
 
 8. Wirklich zufrieden wirst du mit dem Ergebnis wohl nicht sein. Copilot kann auch alternative Vorschläge anzeigen. Lösche dazu alles bis auf die erste Zeile der Funktion und platziere den Cursor am Ende der Zeile.
@@ -48,9 +48,10 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
     ![Alternative Vorschlaege](./images/copilot_04_ue1.png?raw=true "Alternative Vorschlaege")
 
 10. Lass uns jetzt noch einmal versuchen, eine noch spezifischere Anfrage zu stellen. Lösche deinen gesamten Code, und gib anstelle eines Kommentars einen Funktionsnamen ein. Drücke noch nicht `Enter` oder `Tab`:
-  ```javascript
-  function splitURLandReturnComponents
-  ```
+   
+    ```javascript
+    function splitURLandReturnComponents
+    ```
 11. Mit diesem Namen sollte Copilot eine vollständige Funktion vorschlagen - tatsächlich sogar mehrere. Bewege die Maus über den Code und ein kleines Fenster sollte erscheinen. Hier siehst du, wie viele Optionen zur Auswahl stehen. Klicke auf ">" bzw. "<", um die Optionen durchzuschalten, und auf "Akzeptieren" (`Tab`), um den jeweiligen Vorschlag in deinen Code zu übernehmen.
 
     ![Optionen durchschalten](./images/copilot_05_ue1.png?raw=true "Optionen durchschalten")
@@ -66,15 +67,15 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 1. Erstelle eine neue Datei `primzahlen.py`, wie in Übung 1 per Interface oder Terminal:
    
-```bash
-code primzahlen.py
-```
+   ```bash
+   code primzahlen.py
+   ```
    
 2. Schreibe den Anfang einer Funktion:
    
-```python
-def is_prime(n):
-```
+   ```python
+   def is_prime(n):
+   ```
    
 3. Platziere den Cursor am Ende der Zeile.
    
@@ -136,7 +137,7 @@ def is_prime(n):
 <br>
 
 ### Übung 3 - Code verstehen und kommentieren mit Copilot
-#### In dieser Übung nutzen wir Copilot, um bestehenden Code zu analysieren, zu erklären und automatisch sinnvolle Kommentare zu generieren.
+#### In dieser Übung nutzen wir Copilot, um bestehenden Code zu analysieren, zu erklären und automatisch sinnvolle Dokumentationskommentare zu generieren.
 
 1. Jetzt, wo wir etwas Code haben, mit dem wir arbeiten können, schauen wir uns an, was Copilot sonst noch für uns tun kann. Lass dir den aktuellen Code in deiner `primzahlen.py`-Datei erklären. Markiere den Code und öffne den Copilot-Inline-Chat mit der Tastenkombination `Cmd + I`.
 
@@ -147,18 +148,18 @@ def is_prime(n):
 
 3. Wenn dir die Antwort unklar oder unvollständig ist, kannst du weitere Fragen stellen, z.B.:
 
-```plaintext
-Kannst du den Algorithmus genauer erklären?
-```
+   ```plaintext
+   Kannst du den Algorithmus genauer erklären?
+   ```
 
 **Hinweis:** Möchtest du die Erklärung in deiner Sprache haben, kannst du Copilot mit Formulierungen wie "/explain Antworte auf Deutsch" dazu anweisen. 
    
 4. (Optional) Wir können uns den Code auch über Kommentare erklären lassen. Das ist eine ältere Methode; der Chat bietet mittlerweile mehr Möglichkeiten.
    Gib den folgenden Kommentar unterhalb deiner Funktion ein: 
 
-```python
-# Erkläre den Code oben Zeile für Zeile
-```
+   ```python
+   # Erkläre den Code oben Zeile für Zeile
+   ```
 
    Copilot sollte die Antwort nun in den Kommentaren anzeigen. Drücke `Tab`, um die Zeile zu akzeptieren und `Enter` um in die nächste Zeile zu springen und auf den nächsten Schritt der Erklärung zu warten.
 
@@ -186,15 +187,15 @@ Kannst du den Algorithmus genauer erklären?
 
 1. Wir wollen uns nun Unit-Tests für unsere Primzahlen-Funktion erstellen lassen. Schreibe dazu folgenden Kommentar unterhalb deiner Funktion:
 
-  ```python
-  # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
-  ```
+   ```python
+   # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
+   ```
 
 2. Drücke `Enter` und warte ggf. einen Moment, bis Copilot eine Antwort generiert hat, und drücke dann `Tab`, um den Code anzunehmen. Falls du keinen Vorschlag erhältst, gib Copilot schon einmal den Funktionsnamen vor:
 
-  ```python
-  def test_is_prime():
-  ```
+   ```python
+   def test_is_prime():
+   ```
    
   ![Tests generieren](./images/copilot_18_ue4.png?raw=true "Tests generieren")
   
@@ -205,11 +206,11 @@ Kannst du den Algorithmus genauer erklären?
 
 4. Öffne den Copilot-Chat (`Strg + Alt + I`) und stelle Copilot eine Frage wie die folgende:
 
-  ```
-  Erkläre mir, wie ich diesen Code testen kann
-  ```
+   ```
+   Erkläre mir, wie ich diesen Code testen kann
+   ```
 
-**Hinweis:** Sollte Copilot dich auffordern, dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
+   **Hinweis:** Sollte Copilot dich auffordern, dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
 
 
 
@@ -223,7 +224,26 @@ Kannst du den Algorithmus genauer erklären?
 
 <br>
 
-### Übung 5
+### Übung 5 – SQL-Abfragen mit Copilot erstellen
+#### In dieser Übung entdecken wir anhand von Beispielen, wie Copilot beim Schreiben von SQL-Abfragen behilflich sein kann.
+
+1. Erstelle eine neue Datei `dev.sql`.
    
+Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell dir vor, wir möchten mit einer Datenbank arbeiten, die Datensätze für Studierende, Mitarbeitende, Lehrpläne, Kurse, Fakultäten, Standorte und Einschreibungen eines Universitätssystems enthält. Schauen wir doch mal, was Copilot für eine Abfrage generieren würde, um alle Studierenden in einem Kurs zu erhalten – und das ohne jeglichen zusätzlichen Kontext.
+
+2. Gib den folgenden Kommentar ein und drücke `Tab`, um die Vorschläge zu akzeptieren. Falls du keinen Vorschlag erhältst oder nur ein Kommentar erscheint, kannst du Copilot durch das Eintippen von `select` einen kleinen „Schubs“ geben.
+
+   ```sql
+   -- Definiere eine SELECT-Abfrage, um alle Studierenden in einem Kurs zu erhalten
+   ```
+
+3. Speichere deine Datei (`Strg + S`), damit sie als Teil des Projekts betrachtet wird.
+
+4. Jetzt wollen wir uns ansehen, ob wir andere Ergebnisse bekommen, wenn wir Copilot zusätzlichen Kontext bereitstellen.
+   Öffne die Datei `create-tables.sql` die sich im GitHub-Repository befindet, in deinem Editor. Du kannst dazu folgenden Befehl im Terminal verwenden:
+
+   ```bash
+   code create-tables.sql
+   ```
   
    
