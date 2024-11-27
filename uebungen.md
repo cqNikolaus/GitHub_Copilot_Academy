@@ -141,33 +141,38 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 1. Jetzt, wo wir etwas Code haben, mit dem wir arbeiten können, schauen wir uns an, was Copilot sonst noch für uns tun kann. Lass dir den aktuellen Code in unserer `primzahlen.py`-Datei erklären. Markiere den Code und öffne den Copilot-Inline-Chat mit der Tastenkombination `Cmd + I`.
 
 2. Auch hier können wir, anstatt eine längere Anfrage zu stellen, eines der eingebauten Slash-Kommandos nutzen:  
-   Gib `/explain`ein und drücke `Enter`.
+   Gib `/explain` ein und drücke `Enter`.
 
    ![Code erklären lassen](./images/copilot_14_ue3.png?raw=true "Code erklären lassen")
 
-3. Wenn dir die Antwort unklar oder unvollständig ist, kannst du weitere Fragen stellen, z.B.:
+4. Wenn dir die Antwort unklar oder unvollständig ist, kannst du weitere Fragen stellen, z.B.:
 
    ```plaintext
    Kannst du den Algorithmus genauer erklären?
    ```
-4. (Optional) Wir können uns den Code auch über Kommentare erklären lassen. Das ist eine ältere Methode, der Chat bietet mittlerweile mehr möglichkeiten.
+
+   **Hinweis:** Möchtest du die Erklärung in deiner Sprache haben, kannst du Copilot mit Formulierungen wie "/explain Antworte auf Deutsch" dazu anweisen. 
+   
+5. (Optional) Wir können uns den Code auch über Kommentare erklären lassen. Das ist eine ältere Methode; der Chat bietet mittlerweile mehr Möglichkeiten.
    Gib den folgenden Kommentar unterhalb deiner Funktion ein: 
 
    ```python
    # Erkläre den Code oben Zeile für Zeile
    ```
-   Copilot sollte die Antwort nun in den Kommentaren anzeigen. Drücke `Tab` um die Zeile zu akzeptieren und `Enter` um in die nächste Zeile zu springen und auf den nächsten Schritt der Erklärung zu warten.
+   Copilot sollte die Antwort nun in den Kommentaren anzeigen. Drücke `Tab`, um die Zeile zu akzeptieren und `Enter` um in die nächste Zeile zu springen und auf den nächsten Schritt der Erklärung zu warten.
 
    ![Code erklären lassen per Kommentar](./images/copilot_15_ue3.png?raw=true "Code erklären lassen per Kommentar")
 
    Mit dem Präfix `q:` lässt sich auch direkt eine Frage als Kommentar stellen. Die Antwort können wir, falls sie nicht automatisch erscheint, durch einen weiteren Kommentar, der mit `a:` beginnt, erzeugen lassen.
 
-   ![Erklärung per Kommentar Präfix](./images/copilot_16_ue3.png?raw=true "Erklärung per Kommentar Präfix" )
+   ![Erklärung per Kommentar Präfix](./images/copilot_16_ue3.png?raw=true "Erklärung per Kommentar Präfix")
 
-5. Nun wollen wir das doc-Feature ausprobieren, um automatisch Dokumentationskommentare zu erstellen. Markiere deine Funktion.
+6. Nun wollen wir das doc-Feature ausprobieren, um automatisch Dokumentationskommentare zu erstellen. Markiere deine Funktion.
    
-6. Drücke jetzt `Strg + I`für den Inline-Chat, gib das Slash-Kommando `/doc` ein und drücke `Enter`. Copilot sollte nun automatisch einen Docstring für deinen Code generieren. Klicke auf "Akzeptieren" um den Vorschlag anzunehmen.
-
+7. Drücke jetzt `Strg + I` für den Inline-Chat, gib das Slash-Kommando `/doc` ein und drücke `Enter`. Copilot sollte nun automatisch einen Docstring für deinen Code generieren. Klicke auf "Annehmen", um den Vorschlag zu akzeptieren.
+   Zusätzlich kannst du Copilot auch hier in eigener Formulierung, z.B. die gewünschte Sprache oder die Ausführlichkeit der zu generierenden Kommentare, vorgeben.
+   
+   ![Doc-feature](./images/copilot_17_ue3.png?raw=true "Doc-feature")
    
 
    
