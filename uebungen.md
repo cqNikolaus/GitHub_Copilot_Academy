@@ -281,7 +281,7 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 <br>
 
 ### Copilot und die Aktualität von Daten
-#### In dieser Übung werden werden wir herausfinden, was es für Möglichkeiten gibt, wenn Copilot nicht die aktuellsten Informationen hat.
+#### In dieser Übung werden wir herausfinden, was es für Möglichkeiten gibt, wenn Copilot nicht die aktuellsten Informationen hat.
 
 1. Erstelle wie in den Übungen zuvor eine neue Datei und nenne sie diesmal `explore.go`.
 
@@ -294,21 +294,22 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
    
 3. Copilot hat vermutlich die rand.Seed Funktion genutzt. Diese Funktion ist seit Go 1.20 allerdings [veraltet](https://cs.opensource.google/go/go/+/refs/tags/go1.21.0:src/math/rand/rand.go;l=394)
 
-4. Fragen wir doch einmal Copilot ob das stimmt:
+4. Fragen wir doch einmal Copilot, ob das stimmt:
 
    ```plaintext
    Ist die rand.Seed Funktion in Go veraltet?
    ```
    ![Seed in Go](./images/copilot_25_ue6.png?raw=true "Seed in Go")
 
-5. Um Copilots Wissenslücken für den Moment zu schließen, gibt es nun mehrere Möglichkeiten. Eine davon ist, aktuelle Codeausschnitte als Informationen bereitzustellen. Lösche den Inhalt deiner `explore.go` und füge stattdessen folgenden Ausschnitt aus der [Go-Dokumentation](https://pkg.go.dev/math/rand) als Kommentar ein:
+5. Es gibt mehrere Möglichkeiten, Copilots Wissenslücken vorübergehend zu schließen. Eine davon ist, aktuelle Codeausschnitte als Informationen bereitzustellen. Lösche den Inhalt deiner `explore.go` und füge stattdessen folgenden Ausschnitt aus der [Go-Dokumentation](https://pkg.go.dev/math/rand) als Kommentar ein:
 
-   ```go
-   // Create and seed the generator.
+	```go
+	// Create and seed the generator.
 	// Typically a non-fixed seed should be used, such as time.Now().UnixNano().
 	// Using a fixed seed will produce the same output on every run.
 	// r := rand.New(rand.NewSource(99))
-   ```
+  	```
+
 
 6. Stelle deine Anfrage aus Schritt 2 nun unterhalb der eingefügten Zeilen erneut.
 
@@ -317,7 +318,7 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
    Copilot sollte automatisch die neue Funktion aus der Dokumentation nutzen.  
    **Hinweis:** Du kannst diese zusätzlichen Informationen natürlich auch direkt zu deiner Anfrage im Chat bereitstellen, anstatt sie als Kommentar hinzuzufügen.
 
-7. Eine andere Möglichkeit, die uns seit Ende 2024 zur Verfügung steht, ist Copilot die aktuellen Informationen selbstständig online suchen zu lassen. Voraussetzung dafür ist, dass zuvor in den GitHub Copilot Einstellungen (https://github.com/settings/copilot) die Option "Copilot access to Bing" aktiviert wurde.
+7. Eine andere Möglichkeit, die uns seit Oktober 2024 zur Verfügung steht, ist, Copilot die aktuellen Informationen selbstständig online suchen zu lassen. Voraussetzung dafür ist, dass zuvor in den GitHub Copilot Einstellungen (https://github.com/settings/copilot) die Option "Copilot access to Bing" aktiviert wurde.
 
    ![Copilot access to Bing](./images/copilot_28_ue6.png?raw=true "Copilot access to Bing")
 
@@ -333,6 +334,12 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
    **Hinweis:** Zum aktuellen Zeitpunkt funktioniert das Feature möglicherweise noch nicht in den Codespaces. Wundere dich also nicht, falls du eine Fehlermeldung erhältst. In deiner IDE sollte es klappen.
 
    
-   
-   
+<br>
+
+---
+
+<br>
+
+### Übung 7 - YAML-Generierung, API Nutzung und Code Übersetzung.
+#### In dieser Übung schauen wir uns an, wie Copilot bei YAML-Dateien und API Nutzung helfen kann und wie er Code für uns in eine andere Sprache übersetzt.
 
