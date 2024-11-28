@@ -274,6 +274,65 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 
    ![Stored Procedure](./images/copilot_24_ue5.png?raw=true "Stored Procedure")
 
+<br>
 
+---
+
+<br>
+
+### Copilot und die Aktualität von Daten
+#### In dieser Übung werden werden wir herausfinden, was es für Möglichkeiten gibt, wenn Copilot nicht die aktuellsten Informationen hat.
+
+1. Erstelle wie in den Übungen zuvor eine neue Datei und nenne sie diesmal `explore.go`.
+
+2. Nun wollen wir einen Generator für Zufallszahlen in Go erstellen. Weise Copilot im Inline-Chat (`Strg + I`) an:
+
+   ```go
+   Schreibe eine Funktion für einen Zufallszahlengenerator
+   ```
+   ![Zufallszahlen](./images/copilot_26_ue6.png?raw=true "Zufallszahlen")
+   
+3. Copilot hat vermutlich die rand.Seed Funktion genutzt. Diese Funktion ist seit Go 1.20 allerdings [veraltet](https://cs.opensource.google/go/go/+/refs/tags/go1.21.0:src/math/rand/rand.go;l=394)
+
+4. Fragen wir doch einmal Copilot ob das stimmt:
+
+   ```plaintext
+   Ist die rand.Seed Funktion in Go veraltet?
+   ```
+   ![Seed in Go](./images/copilot_25_ue6.png?raw=true "Seed in Go")
+
+5. Um Copilots Wissenslücken für den Moment zu schließen, gibt es nun mehrere Möglichkeiten. Eine davon ist, aktuelle Codeausschnitte als Informationen bereitzustellen. Lösche den Inhalt deiner `explore.go` und füge stattdessen folgenden Ausschnitt aus der [Go-Dokumentation](https://pkg.go.dev/math/rand) als Kommentar ein:
+
+   ```go
+   // Create and seed the generator.
+	// Typically a non-fixed seed should be used, such as time.Now().UnixNano().
+	// Using a fixed seed will produce the same output on every run.
+	// r := rand.New(rand.NewSource(99))
+   ```
+
+6. Stelle deine Anfrage aus Schritt 2 nun unterhalb der eingefügten Zeilen erneut.
+
+   ![Zufallszahlen mit Kontext Doc](./images/copilot_27_ue6.png?raw=true "Zufallszahlen mit Kontext Doc")
+
+   Copilot sollte automatisch die neue Funktion aus der Dokumentation nutzen.  
+   **Hinweis:** Du kannst diese zusätzlichen Informationen natürlich auch direkt zu deiner Anfrage im Chat bereitstellen, anstatt sie als Kommentar hinzuzufügen.
+
+7. Eine andere Möglichkeit, die uns seit Ende 2024 zur Verfügung steht, ist Copilot die aktuellen Informationen selbstständig online suchen zu lassen. Voraussetzung dafür ist, dass zuvor in den GitHub Copilot Einstellungen (https://github.com/settings/copilot) die Option "Copilot access to Bing" aktiviert wurde.
+
+   ![Copilot access to Bing](./images/copilot_28_ue6.png?raw=true "Copilot access to Bing")
+
+8. Ist dieses Feature aktiviert, können wir im Copilot Chat mit `@github` auf die GitHub-spezifischen Features zugreifen und Copilot mit `#web` mitteilen, dass die Onlinesuche für die Anfrage eingesetzt werden soll.
+   Die gesamte Anfrage könnte dann also z.B. so aussehen:
+
+   ```plaintext
+   @github #web Ist die rand.Seed Funktion in Go veraltet?
+   ```
+   
+   ![Copilot Websuche](./images/copilot_29_ue6.png?raw=true "Copilot Websuche")
+
+   **Hinweis:** Zum aktuellen Zeitpunkt funktioniert das Feature möglicherweise noch nicht in den Codespaces. Wundere dich also nicht, falls du eine Fehlermeldung erhältst. In deiner IDE sollte es klappen.
+
+   
+   
    
 
