@@ -237,13 +237,43 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
    Definiere eine SELECT-Abfrage, um alle Studierenden in einem Kurs zu erhalten
    ```
 
-3. Jetzt wollen wir uns ansehen, ob wir andere Ergebnisse bekommen, wenn wir Copilot zusätzlichen Kontext bereitstellen. In unserem GitHub-Repository befindet sich eine Datei `create-tables.sql` die eine Reihe von Tabellen enthält. Wenn du möchtest, kannst du sie dir ansehen oder in einem neuen Tab öffnen, für unser Beispiel spielt das aber keine Rolle.
+3. Jetzt wollen wir uns ansehen, ob wir andere Ergebnisse bekommen, wenn wir Copilot zusätzlichen Kontext bereitstellen. In unserem GitHub-Repository befindet sich eine Datei `create-tables.sql`, die eine Reihe von Tabellen enthält. Wenn du möchtest, kannst du sie dir ansehen oder in einem neuen Tab öffnen, für unser Beispiel spielt das aber keine Rolle.
 
-4. Um nun explizit die Datei `create-tables.sql` dem Kontext hinzuzufügen, stelle sicher, dass du du deine `dev.sql`im aktiven Tab geöffnet hast. Öffne dann das Chatfenster und ziehe die Datei `create-tables.sql` aus dem Explorer auf der linken Seite per Drag and Drop in das Chatfenster. Im Eingabefenster deines Copilot-Chats solltest du nun beide Dateinamen sehen. Gib deine Anfrage aus Schritt 2 erneut ein und du wirst feststellen, dass Copilot nun die Abfrage mit Bezug auf die Tabellen aus `create-tables.sql` erstellt.
+4. Um nun explizit die Datei `create-tables.sql` dem Kontext hinzuzufügen, stelle sicher, dass du deine `dev.sql` im aktiven Tab geöffnet hast. Öffne dann das Chatfenster und ziehe die Datei `create-tables.sql` aus dem Explorer auf der linken Seite per Drag and Drop in das Chatfenster. Im Eingabefenster deines Copilot-Chats solltest du nun beide Dateinamen sehen. Gib deine Anfrage aus Schritt 2 erneut ein und du wirst feststellen, dass Copilot nun die Abfrage mit Bezug auf die Tabellen aus `create-tables.sql` erstellt.
 
-   **Hinweis:** Anstatt die Datei per Drag and Drop hinzuzufügen, kannst du auch im Chat die Variable `#file` nutzen um `create-tables.sql` auszuwählen.
+   **Hinweis:** Anstatt die Datei per Drag and Drop hinzuzufügen, kannst du auch im Chat die Variable `#file` nutzen, um `create-tables.sql` auszuwählen.
 
 ![SQL Abfrage mit Copilot](./images/copilot_21_ue5.png?raw=true "SQL Abfrage mit Copilot")
+
+5. Möglicherweise wollen wir auch einen Index verwenden, um die Abfragen zu beschleunigen. Öffne wieder den Chat oder Inline-Chat und bitte Copilot um Folgendes:
+
+   ```plaintext
+   Erstelle einen Index, um die Performance der Abfrage zu verbessern
+   ```
+   ![Index erstellen](./images/copilot_22_ue5.png?raw=true "Index erstellen")
+
+6. Angenommen, wir möchten zusätzlich eine Tabelle erstellen, um die Anwesenheit von Studierenden zu erfassen. Wir können Copilot bitten, die Tabellen-Definition für uns zu erstellen:
+
+   ```plaintext
+   Definiere eine Tabelle für die Anwesenheit von Studierenden, um die Anwesenheit nach Klassen zu erfassen
+   ```
+
+   ![Tabelle erstellen](./images/copilot_23_ue5.png?raw=true "Tabelle erstellen")
+
+7. Copilot kann auch Stored Procedures erstellen. Versuche es mal mit folgendem Prompt:
+
+   ```plaintext
+   Generiere eine Stored Procedure, um Kursanmeldungen nach Standort abzurufen
+   ```
+    
+   oder auch direkt mit einer komplexeren Anfrage:
+
+   ```plaintext
+   Erstelle eine Stored Procedure, um Details zu Instruktoren zu erhalten, die mit einem Standort verbunden sind. Schließe Instruktor-Details, Standort-Details und Kurse ein, die dem Instruktor zugeordnet sind. Verwende instructor_id als Eingabeparameter
+   ```
+
+   ![Stored Procedure](./images/copilot_24_ue5.png?raw=true "Stored Procedure")
+
 
    
 
