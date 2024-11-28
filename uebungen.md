@@ -341,5 +341,57 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 <br>
 
 ### Übung 7 - YAML-Generierung, API Nutzung und Code Übersetzung.
-#### In dieser Übung schauen wir uns an, wie Copilot bei YAML-Dateien und API Nutzung helfen kann und wie er Code für uns in eine andere Sprache übersetzt.
+#### In dieser Übung schauen wir uns an, wie Copilot bei YAML-Dateien und API Nutzung helfen kann und wie wir unseren Code in eine andere Sprache übersetzen lassen können.
 
+1. Erstelle eine neue Datei `deployment.yaml`
+
+2. Öffne den Copilot Inline-Chat mit `Strg + I` und gib folgende Anfrage ein:
+
+	```plaintext
+	Erstelle eine Spezifikation für ein Deployment in Kubernetes mit 2 Replicas und einem Image von BusyBox.
+	Füge den Containern den Befehl hinzu: sleep 3600.
+	Füge die Labels app: myapp und type: front-end hinzu.
+	```
+
+3. Nachdem Copilot die Antwort generiert hat, klicke auf Annehmen. 
+   
+	![Kubernetes Spec](./images/copilot_30_ue7.png?raw=true "Kubernetes Spec")
+
+4. Nehmen wir an, wir wissen nicht wie man diesen Code ausführt. Fragen wir Copilot. Markiere den Code, öffne dann den Chat und stelle die Frage:
+
+   ```plaintext
+   Wie führe ich diesen Code aus?
+   ```
+
+5. Copilot sollte eine ähnliche Antwort, wie die Folgende zurückgeben:
+
+	![Kubernetes Code ausführen](./images/copilot_31_ue7.png?raw=true "Kubernetes Code ausführen")
+
+6. Lassen wir uns nun etwas Code generieren, um mit der Kubernetes-API zu arbeiten. Gib folgendes im Chat-Interface ein:
+
+	 ```plaintext
+	 Wie rufe ich mit Python die K8s-API auf, um ein Deployment auf 5 Replicas zu skalieren?
+   ```
+
+7. Unsere Antwort möchten wir direkt in eine neue Datei einfügen. Bewege die Maus über die generierte Antwort, klicke dann auf den Button mit den drei Punkten (`...`) und anschließend auf "In neue Datei einfügen"
+
+   ![Kubernetes API in neuer Datei](./images/copilot_32_ue7.png?raw=true "Kubernetes API in neuer Datei")
+
+8. Angenommen, wir haben unsere Meinung geändert und möchten den Aufruf nun lieber in Go, anstatt in Python haben. Markiere den Code in deiner neuen Datei, öffne den Chat und teile Copilot mit, den Code zu übersetzen:
+
+   ```plaintext
+   Übersetze den Code in Go
+   ```
+	![Code übersetzen](./images/copilot_33_ue7.png?raw=true "Code übersetzen")
+
+<br>
+
+---
+
+<br>
+
+### Übung 8
+
+	 
+
+	 
