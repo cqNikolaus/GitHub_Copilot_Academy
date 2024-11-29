@@ -280,7 +280,7 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 
 <br>
 
-### Copilot und die Aktualität von Daten
+### Übung 6 - Copilot und die Aktualität von Daten
 #### In dieser Übung werden wir herausfinden, was es für Möglichkeiten gibt, wenn Copilot nicht die aktuellsten Informationen hat.
 
 1. Erstelle wie in den Übungen zuvor eine neue Datei und nenne sie diesmal `explore.go`.
@@ -390,8 +390,77 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 
 <br>
 
-### Übung 8
+### Übung 8 - Chat-Teilnehmer und Commit-Messages
+#### In dieser Übung sehen wir uns an, wie wir Chat-Teilnehmer ansprechen und nutzen, sowie automatisch Commit-Messages generieren lassen können.
 
-	 
+1. Wir nutzen für dieses Beispiel unsere `explore.go`-Datei aus Übung 6. Stelle sicher, dass die Datei im aktuellen Tab geöffnet ist.
 
-	 
+2. Stelle Copilot folgende Frage im Chat:
+
+   ```plaintext
+   Wie kann ich die Umgebungsvariable PATH ausgeben?
+   ```
+
+3. Da Copilot den Kontext der geöffneten `explore.go` erkennt, wird er vermutlich mit Go-Code antworten.
+
+   ![Umgebungsvariable ausgeben - Go](./images/copilot_34_ue8.png?raw=true "Umgebungsvariable ausgeben - Go")
+
+4. Wollen wir aber stattdessen den Terminal-Befehl wissen, können wir die Anfrage erneut stellen und explizit den Chat-Teilnehmer `@terminal` referenzieren:
+
+   ```plaintext
+   @terminal Wie kann ich die Umgebungsvariable PATH ausgeben?
+	 ```
+
+	 ![Umgebungsvariable ausgeben - Terminal](./images/copilot_35_ue8.png?raw=true "Umgebungsvariable ausgeben - Terminal")
+
+5. Nun möchten wir unsere `explore.go` Datei stagen, um sie für einen Commit vorzubereiten. Wir werden Copilot fragen, wie das geht. Der Chat-Teilnehmer `@terminal` kann auch hier gezielt angesprochen werden, um eine etwas knappere Antwort zu erhalten. Die korrekte Antwort auf die Frage könnte uns Copilot allerdings auch ohne explizite Angabe eines Chat-Teilnehmers liefern:
+
+   ```plaintext
+   @terminal Wie stage ich die Datei?
+   ```
+    
+	![Datei stagen](./images/copilot_36_ue8.png?raw=true "Datei stagen")
+
+6. Fahre mit dem Mauszeiger über die Antwort und klicke rechts oben auf den erscheinenden Button um die Antwort direkt in das Terminal einzufügen. Drücke anschließend `Enter`
+
+   ![In Terminal einfügen](./images/copilot_37_ue8.png?raw=true "In Terminal einfügen")
+
+7. Klicke im Menü auf der linken Seite auf das Symbol für die Quellcodeverwaltung.
+
+   ![Quellcodeverwaltung](./images/copilot_40_ue8.png?raw=true "Quellcodeverwaltung")
+
+8. Klicke auf das Stern- bzw. Glitzer-Symbol rechts neben dem Textfeld. Copilot generiert nun eine (hoffentlich sinnvolle) Zusammenfassung der letzten Änderung für dich. Da wir den Commit für dieses Beispiel nicht setzen müssen, kannst du mit dem nächsten Schritt fortfahren.
+
+   ![Commit-Message generieren](./images/copilot_41_ue8.png?raw=true "Commit-Message generieren")
+
+9. Jetzt wollen wir einen anderen wichtigen Chat-Teilnehmer kennenlernen. Versuchen wir dazu einmal herauszufinden, welche Dateien in unserem Arbeitsbereich SQL-Code beinhalten.
+
+10. Öffne den Copilot-Chat und stelle folgende Frage:
+
+    ```plaintext
+    Welche Dateien nutzen SQL?
+    ```
+		
+	  Da Copilot aktuell in erster Linie den Kontext unserer geöffneten `explore.go` Datei einbezieht, wird die Antwort vermutlich eine Erklärung sein. 
+	
+    ![Welche Dateien nutzen SQL?](./images/copilot_38_ue8.png?raw=true "Welche Dateien nutzen SQL?")
+
+11. Wiederhole die Anfrage, aber referenziere diesmal den workspace-Teilnehmer mit `@workspace`:
+
+    ```plaintext
+    @workspace Welche Dateien nutzen SQL?
+    ```
+
+	  Du solltest nun beobachten können, dass Copilot zunächst Arbeitsbereichsinformationen sammelt und dir anschließend korrekt alle betreffenden Dateien auflistet.
+
+	  ![SQL Dateien im Workspace](./images/copilot_39_ue8.png?raw=true "SQL Dateien im Workspace")
+
+
+<br>
+
+---
+
+<br>
+
+### Übung 9 - Copilot in GitHub
+#### In dieser Übung machen wir uns mit dem in GitHub integrierten Chat-Interface vertraut.
