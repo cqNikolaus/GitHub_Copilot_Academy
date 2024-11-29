@@ -454,13 +454,3 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 	  Du solltest nun beobachten können, dass Copilot zunächst Arbeitsbereichsinformationen sammelt und dir anschließend korrekt alle betreffenden Dateien auflistet.
 
 	  ![SQL Dateien im Workspace](./images/copilot_39_ue8.png?raw=true "SQL Dateien im Workspace")
-
-
-<br>
-
----
-
-<br>
-
-### Übung 9 - Copilot in GitHub
-#### In dieser Übung machen wir uns mit dem in GitHub integrierten Chat-Interface vertraut.
