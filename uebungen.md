@@ -1,7 +1,7 @@
 ![Comquent Academy](./images/comquent-academy-logo.png?raw=true "Comquent Academy")
 # GitHub Copilot Workshop - Übungen
-### Übung 1 - Gute Prompts erstellen
-#### In dieser Übung lernen wir, wie Copilot anhand der von uns bereitgestellten Informationen Code generiert.
+### Übung 1 - Erste Schritte
+#### In dieser Übung lernen wir Copilot kennen, indem wir uns Codevorschläge anhand von Funktionsnamen und Kommentaren generieren lassen.
 1. Erstelle eine neue Datei. Wir nutzen für dieses Beispiel eine JavaScript-Datei. Erstelle sie über das Interface oder gib Folgendes in deinem Terminal ein:
 
    ```bash 
