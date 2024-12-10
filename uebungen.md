@@ -62,8 +62,8 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 <br>
 
-### Übung 2 - Code vereinfachen
-#### In dieser Übung sehen wir uns an, wie Copilot uns dabei helfen kann, bestehenden Code zu vereinfachen und übersichtlicher zu machen.
+### Übung 2 - Code vereinfachen, korrigieren und kommentieren.
+#### In dieser Übung sehen wir uns an, wie Copilot uns dabei helfen kann, bestehenden Code zu optimieren und übersichtlicher zu machen.
 
 1. Erstelle eine neue Datei `primzahlen.py`, wie in Übung 1 per Interface oder Terminal:
    
@@ -89,7 +89,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 6. Markiere jetzt deinen Code und öffne anschließend das Chat Fenster in der Seitenleiste rechts oder durch `Strg + Alt + I`.
 
-7. Weise Copilot in deinen Worten an, den Code zu vereinfachen (früher mit `/simplify`). Je nachdem, wie viel Spielraum der Code für Optimierungen lässt, kannst du dabei auch spezifischer werden. **Hinweis:** In den meisten Fällen erhältst du eine Antwort in der Sprache, in der du die Anfrage formuliert hast. Beispiele könnten sein:
+7. Weise Copilot in deinen Worten an, den Code zu vereinfachen. Je nachdem, wie viel Spielraum der Code für Optimierungen lässt, kannst du dabei auch spezifischer werden. **Hinweis:** In den meisten Fällen erhältst du eine Antwort in der Sprache, in der du die Anfrage formuliert hast. Beispiele könnten sein:
    
    - ```Vereinfache```
    
@@ -111,7 +111,7 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     Experimentiere ruhig mit Anfragen in Programmiersprachen und Funktionen, die du gut kennst. So bekommst du ein besseres Gefühl dafür, wie Copilot Code vereinfachen kann.
 
-10. (Optional) Copilot kann verschiedene KI-Modelle zur Verarbeitung deiner Anfragen nutzen, die sich in ihrer Qualität unterscheiden können. Wie sieht eine Vereinfachung mit dem aktuell leistungsfähigsten Modell "o1-preview" im Vergleich zu "GPT 4o" aus?  
+10. (Optional) Copilot kann verschiedene KI-Modelle zur Verarbeitung deiner Anfragen nutzen, die sich in ihrer Qualität unterscheiden können. Vergleiche die Antwort des aktuell leistungsfähigsten Modells "o1-preview" mit der Ausgabe des Basismodells "GPT 4o".
     Beachte: "o1-preview" braucht teils deutlich länger, um eine Antwort zu generieren. 
 
    ![Modell wählen](./images/copilot_11_ue2.png?raw=true "Änderungen anzeigen")
@@ -128,16 +128,22 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
     ![Mit Copilot korrigieren](./images/copilot_13_ue2.png?raw=true "Mit Copilot korrigieren")
 
-**„Hinweis:** Wie du an deiner Anfrage im Chatfenster sehen kannst, wird automatisch das Slash-Kommando `/fix` genutzt. Dieser Befehl weist Copilot an, Fehler im Code zu finden und zu korrigieren, ohne dass ein ausführlicher Prompt erforderlich ist. Du kannst daher auch direkt `/fix` in den Copilot-Chat (`Strg + Alt + I`) oder Inline-Chat (`Strg + I`) schreiben. Alternativ sind selbstverständlich auch Anweisungen in freier Formulierung möglich. Bei umfangreichen oder komplexeren Fehlern kann es sinnvoller sein, eine detaillierte Anfrage mit zusätzlichem Kontext im Chat zu stellen.“
 
+15. Zu guter Letzt wollen wir noch das doc-Feature ausprobieren, um automatisch Dokumentationskommentare zu erstellen. Markiere deine Funktion.
+   
+16. Drücke jetzt `Strg + I` für den Inline-Chat, gib das Slash-Kommando `/doc` ein und drücke `Enter`. Copilot sollte nun automatisch einen Docstring für deinen Code generieren. Klicke auf "Annehmen", um den Vorschlag zu akzeptieren.
+   Zusätzlich kannst du Copilot auch hier in eigener Formulierung, z.B. die gewünschte Sprache oder die Ausführlichkeit der zu generierenden Kommentare, vorgeben.
+   
+   ![Doc-feature](./images/copilot_17_ue3.png?raw=true "Doc-feature")
+   
 <br>
 
 ---
 
 <br>
 
-### Übung 3 - Code verstehen und kommentieren mit Copilot
-#### In dieser Übung nutzen wir Copilot, um bestehenden Code zu analysieren, zu erklären und automatisch sinnvolle Dokumentationskommentare zu generieren.
+### Übung 3 - Code erklären und Tests erstellen.
+#### In dieser Übung nutzen wir Copilot, um uns bestehenden Code erklären zu lassen und Tests zu generieren.
 
 1. Jetzt, wo wir etwas Code haben, mit dem wir arbeiten können, schauen wir uns an, was Copilot sonst noch für uns tun kann. Lass dir den aktuellen Code in deiner `primzahlen.py`-Datei erklären. Markiere den Code und öffne den Copilot-Inline-Chat mit der Tastenkombination `Cmd + I`.
 
@@ -153,28 +159,25 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
    ```
 
 **Hinweis:** Möchtest du die Erklärung in deiner Sprache haben, kannst du Copilot mit Formulierungen wie "/explain Antworte auf Deutsch" dazu anweisen. 
-   
-4. (Optional) Wir können uns den Code auch über Kommentare erklären lassen. Das ist eine ältere Methode; der Chat bietet mittlerweile mehr Möglichkeiten.
-   Gib den folgenden Kommentar unterhalb deiner Funktion ein: 
 
-   ```python
-   # Erkläre den Code oben Zeile für Zeile
+4. Wir wollen uns nun Unit-Tests für unsere Primzahlen-Funktion erstellen lassen. Markiere dazu deine Funktion, öffne den Inline-Chat mit `Strg + I` und gib den Befehl `/tests` ein.
+
+**Hinweis:** Sollte Copilot dich auffordern, dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
+
+5. Copilot sollte nun automatisch einige Unit-Tests für deine Funktion in einer neuen Datei erstellen. Klicke auf "Annehmen" und speichere diese Datei anschließend unter dem Namen `test_primzahlen.py`.
+
+![Test erstellen](./images/copilot_44.png?raw=true "Test erstellen")
+
+6. Somit haben wir ein paar Tests erstellt, aber vielleicht gibt es noch Potenzial für Optimierungen. Öffne den Chat und stelle folgende Frage:
+
+   ```plaintext
+   Fehlen Testfälle, die ich ergänzen sollte, insbesondere für Edge Cases?
    ```
 
-   Copilot sollte die Antwort nun in den Kommentaren anzeigen. Drücke `Tab`, um die Zeile zu akzeptieren und `Enter` um in die nächste Zeile zu springen und auf den nächsten Schritt der Erklärung zu warten.
+   Ist das der Fall, erhältst du nun eine optimierte Version deiner `test_primzahlen.py` und kannst den Code mit "In Editor anwenden" direkt in deine Datei einfügen.
 
-   ![Code erklären lassen per Kommentar](./images/copilot_15_ue3.png?raw=true "Code erklären lassen per Kommentar")
-
-   Mit dem Präfix `q:` lässt sich auch direkt eine Frage als Kommentar stellen. Die Antwort können wir, falls sie nicht automatisch erscheint, durch einen weiteren Kommentar, der mit `a:` beginnt, erzeugen lassen.
-
-   ![Erklärung per Kommentar Präfix](./images/copilot_16_ue3.png?raw=true "Erklärung per Kommentar Präfix")
-
-5. Nun wollen wir das doc-Feature ausprobieren, um automatisch Dokumentationskommentare zu erstellen. Markiere deine Funktion.
+   ![Test optimieren](./images/copilot_45.png?raw=true "Test optimieren")
    
-6. Drücke jetzt `Strg + I` für den Inline-Chat, gib das Slash-Kommando `/doc` ein und drücke `Enter`. Copilot sollte nun automatisch einen Docstring für deinen Code generieren. Klicke auf "Annehmen", um den Vorschlag zu akzeptieren.
-   Zusätzlich kannst du Copilot auch hier in eigener Formulierung, z.B. die gewünschte Sprache oder die Ausführlichkeit der zu generierenden Kommentare, vorgeben.
-   
-   ![Doc-feature](./images/copilot_17_ue3.png?raw=true "Doc-feature")
 
 <br>
 
@@ -182,49 +185,8 @@ Hier ist es noch ein wenig wahrscheinlicher, dass Copilot nicht auf Anhieb einen
 
 <br>
 
-### Übung 4 - Tests mit Copilot generieren
-#### In dieser Übung werden wir mit Copilot automatische Tests für unsere Funktionen generieren. 
 
-1. Wir wollen uns nun Unit-Tests für unsere Primzahlen-Funktion erstellen lassen. Schreibe dazu folgenden Kommentar unterhalb deiner Funktion:
-
-   ```python
-   # Erstelle eine Funktion, um 5 Unit-Tests für den obigen Code durchzuführen
-   ```
-
-2. Drücke `Enter` und warte ggf. einen Moment, bis Copilot eine Antwort generiert hat, und drücke dann `Tab`, um den Code anzunehmen. Falls du keinen Vorschlag erhältst, gib Copilot schon einmal den Funktionsnamen vor:
-
-   ```python
-   def test_is_prime():
-   ```
-   
-  ![Tests generieren](./images/copilot_18_ue4.png?raw=true "Tests generieren")
-  
-
-3. Was, wenn wir gar nicht wissen, wie man den Code überhaupt testet? Fragen wir Copilot. Markiere den Code deiner Funktion.
-
-  ![Prime-Funktion markieren](./images/copilot_19_ue4.png?raw=true "Prime-Funktion markieren")
-
-4. Öffne den Copilot-Chat (`Strg + Alt + I`) und stelle Copilot eine Frage wie die folgende:
-
-   ```
-   Erkläre mir, wie ich diesen Code testen kann
-   ```
-
-   **Hinweis:** Sollte Copilot dich auffordern, dein Testframework zu bestätigen, klicke auf "Akzeptieren" und stelle die Anfrage erneut.
-
-
-
-5. Wie du in der Antwort siehst, hat Copilot vermutlich automatisch das Kommando `/test` genutzt und eine Erklärung hinzugefügt. Klicke auf den Haken, um den Vorschlag zu übernehmen, und lasse Copilot, wie in der Erklärung beschrieben, automatisch eine neue Datei erstellen. Diese muss dann noch unter dem beschriebenen Namen ("test_primzahlen.py") gespeichert werden.  
-
-![Test erklären](./images/copilot_20_ue4.png?raw=true "Test erklären")
-
-<br>
-
----
-
-<br>
-
-### Übung 5 – SQL-Abfragen mit Copilot erstellen
+### Übung 4 – SQL-Abfragen mit Copilot erstellen
 #### In dieser Übung entdecken wir anhand von Beispielen, wie Copilot beim Schreiben von SQL-Abfragen behilflich sein kann.
 
 1. Erstelle eine neue Datei `dev.sql`.
@@ -280,7 +242,7 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 
 <br>
 
-### Übung 6 - Copilot und die Aktualität von Daten
+### Übung 5 - Copilot und die Aktualität von Daten
 #### In dieser Übung werden wir herausfinden, was es für Möglichkeiten gibt, wenn Copilot nicht die aktuellsten Informationen hat.
 
 1. Erstelle wie in den Übungen zuvor eine neue Datei und nenne sie diesmal `explore.go`.
@@ -340,7 +302,7 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 
 <br>
 
-### Übung 7 - YAML-Generierung, API Nutzung und Code Übersetzung.
+### Übung 6 - YAML-Generierung, API Nutzung und Code Übersetzung.
 #### In dieser Übung schauen wir uns an, wie Copilot bei YAML-Dateien und API Nutzung helfen kann und wie wir unseren Code in eine andere Sprache übersetzen lassen können.
 
 1. Erstelle eine neue Datei `deployment.yaml`
@@ -390,7 +352,7 @@ Anschließend sollte diese Datei in einem Tab im Editor geöffnet sein. Stell di
 
 <br>
 
-### Übung 8 - Chat-Teilnehmer und Commit-Messages
+### Übung 7 - Chat-Teilnehmer und Commit-Messages
 #### In dieser Übung sehen wir uns an, wie wir Chat-Teilnehmer ansprechen und nutzen, sowie automatisch Commit-Messages generieren lassen können.
 
 1. Wir nutzen für dieses Beispiel unsere `explore.go`-Datei aus Übung 6. Stelle sicher, dass die Datei im aktuellen Tab geöffnet ist.
